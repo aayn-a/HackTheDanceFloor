@@ -24,7 +24,9 @@ You would write "1" to dance and "2" to leave, without the quotation marks.
 
 
 
+Credits: 
 
+Developer: Aayan Agarwal
 
 
 
