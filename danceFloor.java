@@ -4,15 +4,24 @@ class danceFloor{
     public static void main(String args[]){
         Boolean dinner = false;
         Scanner in = new Scanner(System.in);
+
+        //Introduction
         System.out.println("Welcome to the Dance Floor Choose Your Own Adventure! When Prompted with choices, always reply with the number of the choice.");
         System.out.println("What would you like to do first? \n 1. Eat Dinner then go to the dance floor \n 2. Go to the dance floor without eating dinner ");
         String choice = in.nextLine();
         System.out.print(choice);
+
+        //Dinner
         if(choice.equalsIgnoreCase("1")){
             dinner = true;
             System.out.println("You eat dinner, and you feel quite full. ");
         }
+
+
+
         System.out.println("You head to the dance floor. " );
+
+        //Dances
         System.out.println("You remember that you only can do 2 dances, the robot and salsa. Which dance do you you do? \n1. Robot \n2. Salsa ");
         choice = in.nextLine(); 
         if(choice.equalsIgnoreCase("1")){
@@ -22,6 +31,7 @@ class danceFloor{
             System.out.println("You did the salsa to a song that really wasn't the right song for it.  ");
         }
 
+        //DJ
         System.out.println("The DJ got bored of playing music. You could either become the DJ, or let people dance without music. \n1. Become the DJ \n 2. Let People Dance Without Music");
         choice = in.nextLine();
         if(choice.equalsIgnoreCase("1")){
@@ -34,7 +44,7 @@ class danceFloor{
         in.close();
     }
 
-
+//Call Manager for DJ
     public static void manager(){
         Scanner in = new Scanner(System.in);
         String choice = " ";
@@ -52,7 +62,7 @@ class danceFloor{
             end(); 
         }
     }
-
+//Punching DJ
     public static void punch(){
         Scanner in = new Scanner(System.in);
         String choice = " ";
@@ -71,6 +81,7 @@ class danceFloor{
         
     }
 
+//Didn't want to become DJ
     public static void noMusic(){
         Scanner in = new Scanner(System.in);
         String choice = " ";
@@ -85,6 +96,8 @@ class danceFloor{
         }
         
     }
+
+//Drinks
     public static void drinks(){
         Scanner in = new Scanner(System.in);
         String choice = "";
@@ -101,6 +114,9 @@ class danceFloor{
         }
     }
 
+
+
+//Control the entire Dance Floor
     public static void control(){
         Scanner in = new Scanner(System.in);
         String choice = ""; 
@@ -117,6 +133,8 @@ class danceFloor{
         }
     }
 
+
+//Getting back in with a 40% Chance
     public static void backIn(Boolean x){
         Scanner in = new Scanner(System.in);
         String choice = "";
@@ -137,6 +155,9 @@ class danceFloor{
         }
 
     }
+
+
+//Getting Fired from your "DJ"
     public static void fired(Boolean x){
         Scanner in = new Scanner(System.in);
         String choice = "";
@@ -156,6 +177,8 @@ class danceFloor{
         
     }
 
+
+//Becoming DJ
     public static void dj(Boolean x){
         Scanner in = new Scanner(System.in);
         System.out.println("You become the DJ");
@@ -181,6 +204,8 @@ class danceFloor{
         
     }
 
+
+    //Ending 
     public static void end(){
         System.out.println("Thank you so much for playing the Dance Floor Choose Your Own Adventure!");
 
